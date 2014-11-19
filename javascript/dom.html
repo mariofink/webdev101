@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8"/>
+        <title>JavaScript basics – DOM</title>
+    </head>
+    <body>
+
+        <button type="button" onclick="createButton()">Create a new element</button>
+
+        <div id="container">
+            
+        </div>
+
+        <script>
+
+        function createButton() {
+            var container = document.getElementById("container");
+
+            var element = document.createElement("img");
+            element.setAttribute("src", "../images/birdie.jpg");
+            element.setAttribute("alt", "Vögelchen");
+            element.setAttribute("title", "Vögelchen");
+            container.appendChild(element);
+        }
+
+
+        </script>
+
+    </body>
+</html>

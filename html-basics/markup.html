@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="utf-8"/>
+        <title>HyperTextMarkupLanguage</title>
+    </head>
+    <body>
+        <h1>What is HTML?</h1>
+        <p>
+            <strong>HTML</strong> or <strong>HyperText Markup Language</strong> is the standard <a href="#" title="Markup language">markup language</a> used to create <a href="#" title="Web page">web pages</a>.
+        </p>
+        <p>
+            HTML is written in the form of <a href="#" title="HTML element">HTML elements</a> consisting of <em>tags</em> enclosed in <a href="#" title="Angle brackets">angle brackets</a> (like <code>&lt;html&gt;</code>). HTML tags most commonly come in pairs like <code>&lt;h1&gt;</code> and <code>&lt;/h1&gt;</code>, although some tags represent <em>empty elements</em> and so are unpaired, for example <code>&lt;img&gt;</code>. The first tag in a pair is the <em>start tag</em>, and the second tag is the <em>end tag</em> (they are also called <em>opening tags</em> and <em>closing tags</em>).
+        </p>
+
+        <p>A web browser can read HTML files and compose them into visible or audible web pages. The browser does not display the HTML tags, but uses them to interpret the content of the page. HTML describes the structure of a website semantically along with cues for presentation, making it a markup language rather than a programming language.</p>
+
+        <p>HTML elements form the building blocks of all websites. HTML allows images and objects to be embedded and can be used to create interactive forms. It provides a means to create structured documents by denoting structural semantics for text such as headings, paragraphs, lists, links, quotes and other items. It can embed scripts written in languages such as JavaScript which affect the behavior of HTML web pages.</p>
+
+        <h2>It’s all about semantics</h2>
+        <p>
+            You should use HTML to describe the structure of your content &ndash; not the visual representation. It provides tags to describe:
+        </p>
+
+        <ul>
+            <li>Headings</li>
+            <li>Paragraphs of text</li>
+            <li>Images</li>
+            <li>Links</li>
+            <li>Lists</li>
+            <li>Tables</li>
+            <li>Forms</li>
+            <li>and a lot more&hellip;</li>
+        </ul>
+
+        <h2>Forms</h2>
+
+        <form id="myform" action="#" method="post">
+            <fieldset>
+                <legend>Login</legend>
+                <input type="text" name="userid" placeholder="User id">
+                <input type="password" name="password" placeholder="Password">
+                <button type="submit">Submit</button>
+            </fieldset>
+        </form>
+
+        <h2>Tables</h2>
+
+        <table>
+            <thead>
+              <tr>
+                <th>
+                    First Name
+                </th>
+                <th>
+                    Last Name
+                </th>
+                <th>
+                    City
+                </th>
+                <th>
+                    Amount
+                </th>
+              </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td>
+                        John
+                    </td>
+                    <td>
+                        Doe
+                    </td>
+                    <td>
+                        New York
+                    </td>
+                    <td>
+                        11
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                        Max
+                    </td>
+                    <td>
+                        Mustermann
+                    </td>
+                    <td>
+                        Hamburg
+                    </td>
+                    <td>
+                        31
+                    </td>
+                </tr>
+            </tbody>
+            <tfoot>
+              <tr>
+                <td colspan="3">
+                    &nbsp;
+                </td>
+                <td>
+                    42
+                </td>
+              </tr>
+            </tfoot>
+        </table>
+
+    </body>
+</html>

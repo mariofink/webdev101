@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>JavaScript basics</title>
+        <style media="screen">
+            script {
+                font-family: monospace;
+                white-space: pre;
+                visibility: visible; display: block;
+            }
+        </style>
+    </head>
+    <body>
+
+        <script>
+
+            var name = "Mario";
+
+            function hello() {
+                if (!name) {
+                    var name = "Luigi";
+                }
+                console.log(name);
+            }
+
+            hello(); // --> Luigi
+
+            console.log(name); // --> Mario
+
+        </script>
+
+    </body>
+</html>

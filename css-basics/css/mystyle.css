@@ -1,0 +1,34 @@
+body {
+    color: #333;
+    font-family: Georgia, serif;
+    padding: 0 6em;
+}
+h1, h2, h3, h4, h5, h6 {
+    font-family: sans-serif;
+}
+a {
+    color: teal;
+}
+a:active, a:focus, a:hover {
+    color: hotpink;
+}
+
+.super-huge {
+  font-size: 5em;
+}
+.greyed-out {
+  color: #c0ffee;
+}
+
+
+nav {
+  background: teal;
+  color: hotpink;
+}
+
+.primary {
+  color: yellow;
+}
+.primary li:first-child {
+  font-size: 2em;
+}

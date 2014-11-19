@@ -1,0 +1,37 @@
+body {
+    font-family: sans-serif;
+}
+.gallery {
+    margin: 0 auto;
+    position: relative;
+    width: 500px;
+}
+.gallery figure {
+    position: relative;
+}
+.gallery img {
+    display: block;
+    max-width: 100%;
+}
+.gallery figcaption {
+    background: rgba(0,0,0,0.5);
+    color: #fff;
+    position: absolute;
+    bottom: 0;
+    padding: 0.5em;
+    width: 100%;
+    box-sizing: border-box;
+}
+
+.gallery.js figure {
+    /* display: none; */
+    position: absolute;
+    opacity: 0;
+    -webkit-transition: all 1s;
+    transition: all 1s;
+    width: 100%;
+}
+.gallery.js figure.active {
+    /* display: block; */
+    opacity: 1;
+}

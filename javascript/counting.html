@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="utf-8"/>
+  <title>JavaScript basics – count from a to b</title>
+</head>
+<body>
+
+  <form id="counter">
+    <input type="number" id="numA" value="-20">
+    <input type="number" id="numB" value="10">
+    <button type="submit">Count</button>
+  </form>
+
+  <script>
+  var form = document.getElementById("counter");
+  // call function countFromA2B when the form gets submitted
+  form.addEventListener("submit", countFromA2B, false);
+
+  // helper function to calculate the absolute difference between two numbers
+  function difference(a, b) {
+    return Math.abs(a - b);
+  }
+
+  function countFromA2B(event) {
+    event.preventDefault(); // keep the form submit event from reloading the page
+    var from = parseInt(form.numA.value, 10);
+    var to = parseInt(form.numB.value, 10);
+    var diff = difference(from, to);
+    var next;
+    console.log("count from", from, to, diff);
+    for (var i = 0, length = diff * 10; i <= length; i++) {
+      if (from < to) {
+        next = from + 0.1 * i;
+      } else {
+        next = from - 0.1 * i;
+      }
+      //console.log(next);
+      console.log(Number( next.toFixed(1) ));
+    }
+  }
+
+
+
+  </script>
+
+</body>
+</html>

@@ -1,0 +1,18 @@
+body {
+	font-family: Verdana, sans-serif;
+	margin: 0;
+	padding: 1em;
+}
+#spielfeld {
+	overflow: hidden;
+}
+.fieldBtn {
+	float: left;
+	font-size: 2em;
+	width: 2em;
+	height: 2em;
+	-webkit-appearance: none;
+}
+br {
+	clear: both;
+}
